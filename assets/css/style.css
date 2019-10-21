@@ -1,6 +1,51 @@
+body {
+  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  background: whitesmoke;
+}
+
+#row {
+  padding: 30px;
+  border: 1px solid green;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: green;
+}
+.text {
+  padding: 30px;
+  border: 1px solid green;
+}
+
+p {
+  color: green;
+}
+
 div {
-  border: 1px dotted red;
   margin: 50px 50px 50px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid green;
 }
 
 .gem1 {

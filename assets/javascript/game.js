@@ -1,42 +1,56 @@
-var targetScore = 0;
+var targetNumber = 0;
 var wins = 0;
 var losses = 0;
-var currentScore = 0;
+var totalScoreNumber = 0;
 
-var gem1 = Math.floor(Math.random() * 12) + 1;
-var gem2 = Math.floor(Math.random() * 12) + 1;
-var gem3 = Math.floor(Math.random() * 12) + 1;
-var gem4 = Math.floor(Math.random() * 12) + 1;
+var gem1 = Math.floor(Math.random() * 11) + 1;
+var gem2 = Math.floor(Math.random() * 11) + 1;
+var gem3 = Math.floor(Math.random() * 11) + 1;
+var gem4 = Math.floor(Math.random() * 11) + 1;
+var targetNumber = Math.floor(Math.random() * 120) + 19;
 
-var startGame = function() {
-  var currentScore = 0;
+$(document).ready(function() {
+  var startGame = function() {
+    var score = 0;
 
-  targetScore = Math.floor(Math.random() * 120) + 19;
-  console.log(targetScore);
-  gem1.value = Math.floor(Math.random() * 12) + 1;
-  console.log(gem1);
-  gem2.value = Math.floor(Math.random() * 12) + 1;
-  console.log(gem2);
-  gem3.value = Math.floor(Math.random() * 12) + 1;
-  console.log(gem3);
-  gem4.value = Math.floor(Math.random() * 12) + 1;
-  console.log(gem4);
-  $("#targetScore").html(targetScore);
-  $("#score").html(currentScore);
-};
+    targetNumber = Math.floor(Math.random() * 120) + 19;
+    console.log(targetNumber);
+    gem1.value = Math.floor(Math.random() * 12) + 1;
+    console.log(gem1);
+    gem2.value = Math.floor(Math.random() * 12) + 1;
+    console.log(gem2);
+    gem3.value = Math.floor(Math.random() * 12) + 1;
+    console.log(gem3);
+    gem4.value = Math.floor(Math.random() * 12) + 1;
+    console.log(gem4);
+    $("#targetNumber").html(targetNumber);
+    $("#score").html(score);
+  };
 
-startGame();
+  resetGame();
 
-//jQuery Functions
-$(".gem1").click(function() {
-  alert("test");
-});
-$(".gem2").click(function() {
-  alert("test");
-});
-$(".gem3").click(function() {
-  alert("test");
-});
-$(".gem4").click(function() {
-  alert("test");
+  $(".gem1").click(function() {
+    console.log(".score");
+  });
+  $(".gem2").click(function() {
+    console.log(".score");
+  });
+  $(".gem3").click(function() {
+    console.log(".score");
+  });
+  $(".gem4").click(function() {
+    console.log(".score");
+  });
+
+  function winGame() {
+    alert("You Won!");
+    wins++;
+    $(".win").text("Wins: " + wins);
+  }
+
+  function loseGame() {
+    alert("You lose!");
+    losses++;
+    $(".loss").text("Losses: " + losses);
+  }
 });

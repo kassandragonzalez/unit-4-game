@@ -7,10 +7,11 @@
     <title>Crystal Collector</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--<link rel="stylesheet" href="assets/css/reset.css" /> -->
   </head>
   <body>
     <div id="container">
+      <h1>Crystal Collector</h1>
       <div class="text">
         <p>You will be given a random number at the start of the game.</p>
         <p>
@@ -18,7 +19,7 @@
           specific amount of points to your total score.
         </p>
         <p>
-          You win the game by matching your total scor to random number, you
+          You win the game by matching your total score to random number, you
           lose the game if your total score goes above the random number.
         </p>
         <p>
@@ -30,15 +31,24 @@
         </p>
       </div>
 
-      <div class="targetNumber">
-        35
-        <!--random number-->
+
+
+      <div id="row">
+       <div class="targetNumber">
+        <p><strong>Your random number is: </strong></p>
+       </div>
+
+      <!--TotalScore box-->
+       <div class="totalScoreBox">
+        <p><strong>Your total score is: </strong></p>
+        </div>
+
+        <div id="score">
+        <p class="win"><strong>Wins: </strong></p>
+        <p class="loss"><strong>Losses:</strong></p>
+        </div>
       </div>
 
-      <div class="score">
-        <p>Wins:</p>
-        <p>Losses:</p>
-      </div>
 
       <!--Photos of crystals-->
       <div class="images">
@@ -60,13 +70,7 @@
         />
       </div>
 
-      <div class="totalScoreBox">
-        <!--TotalScore box-->
-      </div>
-
-      <div class="totalScoreNumber">
-        <!--TotalScore Number-->
-      </div>
+     
     </div>
 
     <script href="assets/javascript/game.js"></script>
