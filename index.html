@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystal Collector</title>
-    <link href="assets/css/reset.css">
-    <link href="assets/css/style.css">
-    <script href="assets/javascript/game.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    ></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div id="container">
-      <div class="row">
+      <div class="text">
         <p>You will be given a random number at the start of the game.</p>
         <p>
           There are four crystals below. By clicking ona crystal you will add a
@@ -34,26 +30,49 @@
         </p>
       </div>
 
-      <div>
+      <div class="targetNumber">
+        35
         <!--random number-->
       </div>
 
-      <div>
+      <div class="score">
         <p>Wins:</p>
         <p>Losses:</p>
       </div>
 
-      <div>
-        <!--Photos of crystals-->
+      <!--Photos of crystals-->
+      <div class="images">
+        <img
+          class="gem1"
+          src="https://cdn.shopify.com/s/files/1/0380/5717/products/oval-chatham-lab-grown-yellow-sapphire-gems_1800x1800.jpg?v=1535067567"
+        />
+        <img
+          class="gem2"
+          src="http://feeds2.yourstorewizards.com/2455/images/full/trillion-pink-tourmaline-g2k-3276.jpg"
+        />
+        <img
+          class="gem3"
+          src="http://www.ceylongemlaboratory.com/images/tanzanite.jpg"
+        />
+        <img
+          class="gem4"
+          src="https://www.gemsociety.org/wp-content/uploads/2013/09/51561341_1_x.jpg"
+        />
       </div>
 
-      <div>
+      <div class="totalScoreBox">
         <!--TotalScore box-->
       </div>
 
-      <div>
+      <div class="totalScoreNumber">
         <!--TotalScore Number-->
       </div>
     </div>
+
+    <script href="assets/javascript/game.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
   </body>
 </html>
